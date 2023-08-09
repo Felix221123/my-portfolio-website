@@ -351,11 +351,11 @@ h4{
         height: 19rem;
         background-color: var(--white-color);
         border-radius: 1rem;
-        /* box-shadow: 0px 20px 20px var(--box-shadow-for-projects); */
+        box-shadow: 0px 20px 20px var(--box-shadow-for-projects);
 
         &:hover{
             cursor: pointer;
-            box-shadow: 0px 20px 20px var(--box-shadow-for-projects);
+            /* box-shadow: 0px 20px 20px var(--box-shadow-for-projects); */
             background-color: var(--white-color);
             border-radius: 1rem;
             transition:0.5s;
