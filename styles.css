@@ -347,7 +347,7 @@ h4{
     
 
     & .project-style{
-        width: 22rem;
+        width: 21rem;
         height: 19rem;
         background-color: var(--white-color);
         border-radius: 1rem;
@@ -362,12 +362,11 @@ h4{
         }
 
         & .project-image-container{
-            height: 55%;
             border-radius: 1rem 1rem 0rem 0rem;
 
             & .project-image-styling{
                 width: 100%;
-                height: fit-content;
+                z-index:1;
                 object-fit: contain;
                 border-radius: 1rem 1rem 0rem 0rem;
             }
@@ -386,7 +385,7 @@ h4{
             text-decoration: underline;
             text-decoration-color: var(--headings-color);
             text-decoration-thickness:0.2rem;
-            margin-bottom: 1rem;
+            margin-bottom: clamp(1rem , 1vw, 1.3rem);
         }
 
         & .my-list-linked-projects{
