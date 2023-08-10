@@ -86,7 +86,7 @@ header{
         & .profile-name{
             justify-content: flex-start;
             font-family:var(--fs-1) ;
-            font-size: clamp(1.3rem , 2.5vw , 3rem);
+            font-size: clamp(1.6rem , 3vw , 4rem);
             color: rgba(151, 197, 253, 0.8);
             animation: portofolio-scripts 3s ease-in-out 1;
             transition: animation 0.5s;
@@ -193,11 +193,13 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 
     .avatar-pic{
         width: clamp(20rem , 22vw, 25rem);
         height: clamp(20rem , 22vw, 25rem);
         border-radius: 40rem;
+        box-shadow: 0px 40px 60px var(--box-shadow-for-projects);
     }
 }
 
@@ -210,8 +212,14 @@ header{
     } 
 }
 
+#About-me{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .illustrations-of-individuals-collaborating{
     width: 100%;
+    
     
     & .members-collaboration{
         padding:1rem;
@@ -225,17 +233,17 @@ header{
         color: var(--headings-color);
         opacity: 0.8;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
         font-size: 1.1rem;
         padding: 0rem 0.8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.3rem;
     }
 }
 
 .line-thorugh-the-whole-page-width{
     border: 0.05rem solid var(--random-color);
     opacity: 0.5;
-    margin: 2rem 0rem;
+    margin: 1.5rem 0rem;
     width: 100%;
 }
 h3{
