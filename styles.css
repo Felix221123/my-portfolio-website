@@ -164,57 +164,68 @@ header{
     }
 }
 
-.welcome-section-with-developer-type{
-    & h1{
-        text-align: center;
-        font-family: var(--fs-2);
-        font-size: 1.3rem;
-        padding: 0rem 1rem;
-        color: var(--color-for-navbars);
-        animation: header-1 1.5s ease-in-out 1;
-        transition: animation 0.5s;
+
+section#Home{
+    height: 70vh;
+    .welcome-section-with-developer-type{
+    
+        & h1{
+            text-align: center;
+            font-family: var(--fs-2);
+            font-size: clamp(2rem , 2.5vw, 2.6rem);
+            padding: 0rem 1rem;
+            color: var(--color-for-navbars);
+            animation: header-1 1.5s ease-in-out 1;
+            transition: animation 0.5s;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+            font-weight: var(--fw-bold);
+        }
+        & .paragraph-underneath-heading-profile{
+            font-family: var(--fs-2);
+            padding: 0rem 1rem;
+            text-align: center;
+            line-height: 1.6rem;
+            color: var(--headings-color);
+            font-size:clamp(1.2rem, 1.2vw, 1.3rem);
+            font-weight:var(--fw-extlight) ;
+            
+        }
+    }
+    
+    .my_avatar-profile-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
         margin-bottom: 1rem;
-        margin-top: 0.5rem;
-        font-weight: var(--fw-bold);
+    
+        .avatar-pic{
+            width: clamp(20rem , 22vw, 25rem);
+            height: clamp(20rem , 22vw, 25rem);
+            border-radius: 40rem;
+            box-shadow: 0px 40px 60px var(--box-shadow-for-projects);
+        }
     }
-    & .paragraph-underneath-heading-profile{
-        font-family: var(--fs-2);
-        padding: 0rem 1rem;
-        text-align: center;
-        margin-bottom: 0.7rem;
-        color: var(--headings-color);
-        font-size:0.98rem;
-        font-weight:var(--fw-extlight) ;
-    }
+
 }
 
-.my_avatar-profile-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-
-    .avatar-pic{
-        width: clamp(20rem , 22vw, 25rem);
-        height: clamp(20rem , 22vw, 25rem);
-        border-radius: 40rem;
-        box-shadow: 0px 40px 60px var(--box-shadow-for-projects);
-    }
-}
 
 @keyframes header-1 {
     0%{
         opacity: 0;
+        
     }
     100%{
         opacity: 1;
+        
     } 
 }
 
 #About-me{
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 7vw;
 }
 
 .illustrations-of-individuals-collaborating{
@@ -237,6 +248,7 @@ header{
         font-size: 1.1rem;
         padding: 0rem 0.8rem;
         margin-bottom: 0.3rem;
+        line-height: 1.6rem;
     }
 }
 
