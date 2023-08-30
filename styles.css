@@ -225,7 +225,7 @@ section#Home{
 #About-me{
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 9vw;
+    margin-top: 1vw;
 }
 
 .illustrations-of-individuals-collaborating{
