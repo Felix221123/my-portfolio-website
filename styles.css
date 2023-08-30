@@ -166,13 +166,12 @@ header{
 
 
 section#Home{
-    height: 70vh;
     .welcome-section-with-developer-type{
     
         & h1{
             text-align: center;
             font-family: var(--fs-2);
-            font-size: clamp(2rem , 2.5vw, 2.6rem);
+            font-size: clamp(1.6rem , 1.8vw, 2rem);
             padding: 0rem 1rem;
             color: var(--color-for-navbars);
             animation: header-1 1.5s ease-in-out 1;
