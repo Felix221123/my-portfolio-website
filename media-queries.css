@@ -35,7 +35,7 @@
 
         .welcome-section-with-developer-type{
             & h1{
-               font-size: clamp(2rem,2vw, 3.5rem); 
+               font-size: clamp(2.5rem,2.5vw, 3rem); 
                text-align: left;
                padding: 0rem 0rem;
             }
@@ -143,17 +143,18 @@
         place-items: center;
         grid-template-columns: 50% 50%;
         padding: 0rem 5vw;
+        height: 75vh;
 
         .welcome-section-with-developer-type{
             & h1{
-               font-size: clamp(2rem,2vw, 3.5rem); 
+               font-size: clamp(3rem,3vw, 3.3rem); 
                text-align: left;
                padding: 0rem 0rem;
             }
             & .paragraph-underneath-heading-profile{
                 padding: 0rem 2vw 0rem 0rem;
                 text-align: left;
-                font-size: clamp(1.15rem , 1.2vw , 1.4rem);
+                font-size: clamp(1.3rem , 1.3vw , 1.4rem);
                 vertical-align: middle;
             }
         }
@@ -167,7 +168,7 @@
 
         .explanation-of-the-illustration{
             & .explanation-styling{
-                font-size:clamp(1.2rem , 1.3vw , 2rem);
+                font-size: clamp(1.3rem , 1.3vw , 1.4rem);
                 padding: 0rem 2vw;
             }
         }

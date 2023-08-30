@@ -166,13 +166,13 @@ header{
 
 
 section#Home{
-    height: 70vh;
+    
     .welcome-section-with-developer-type{
     
         & h1{
             text-align: center;
             font-family: var(--fs-2);
-            font-size: clamp(2rem , 2.5vw, 2.6rem);
+            font-size: clamp(1.5rem , 2vw, 2.2rem);
             padding: 0rem 1rem;
             color: var(--color-for-navbars);
             animation: header-1 1.5s ease-in-out 1;
@@ -187,7 +187,7 @@ section#Home{
             text-align: center;
             line-height: 1.6rem;
             color: var(--headings-color);
-            font-size:clamp(1.2rem, 1.2vw, 1.3rem);
+            font-size:clamp(1rem, 1.15vw, 1.2rem);
             font-weight:var(--fw-extlight) ;
             
         }
@@ -225,8 +225,8 @@ section#Home{
 #About-me{
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 9vw;
-    background-color: red;
+    margin-top: 5vw;
+    
 }
 
 .illustrations-of-individuals-collaborating{
@@ -246,7 +246,7 @@ section#Home{
         opacity: 0.8;
         text-align: center;
         margin-top: 1rem;
-        font-size: 1.1rem;
+        font-size:clamp(1rem, 1.15vw, 1.2rem);
         padding: 0rem 0.8rem;
         margin-bottom: 0.3rem;
         line-height: 1.6rem;
