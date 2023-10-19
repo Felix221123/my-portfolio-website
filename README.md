@@ -1,6 +1,6 @@
 # Felix Baah | Portfolio Website 
 
-This is my personal portfolio site that was built solely on html and css : )
+This is my personal portfolio site that was built solely on html , css and javascript: )
 
 
 ### Built with
@@ -9,6 +9,7 @@ This is my personal portfolio site that was built solely on html and css : )
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- JAVASCRIPT DOM
 
 ### What I learned
 During the process of building my portfolio website, I embarked on an exciting journey that was both educational and gratifying. As I delved into the world of HTML and CSS, I was amazed by the power these languages possess and the incredible results they can yield. Creating my own corner of the internet was an endeavor that allowed me to showcase my skills, interests, and achievements in a unique and personalized manner.
