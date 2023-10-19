@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!---------------------- defining and setting meta tags ---------------------->
         <meta charset="UTF-8">
         <meta name="description" content="Personal Portofolio Website">
-        <meta name="keywords" content="HTML, CSS">
+        <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
         <meta name="author" content="Felix Baah">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <!----------------------browser compability ---------------------->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!---------------------- google fonts ---------------------->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+
+        <!---------------------- fontawesome icons ---------------------->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="media-queries.css">
+
+        <!---------------------- stylesheets ---------------------->
+        <link rel="stylesheet" href="static/styles.css">
+        <link rel="stylesheet" href="static/media-queries.css">
+
+        <!---------------------- image icons on desktop ---------------------->
         <link rel="icon" href="images/portfolio-site-icon.jpg" type="image" sizes="32x32">
+
+        <!---------------------- title of page ---------------------->
         <title>Felix Baah | Personal Portfolio Website</title>
     </head>
 
     <body>
         <main>
+
+            <!---------------------- header contents ---------------------->
             <header>
                 <div class="profile-name-and-navbar">
                     <div class="profile-name-port">
-                        <p class="profile-name">Portfol<span class="diff-style">_io</span></p>
+                        <p class="profile-name">Portfol<span class="diff-style"> | io</span></p>
                     </div>
 
                     <div class="navbar-on-the-righthandside-profile">
                         <i class="fa-solid fa-bars"></i>
                         <nav id="navbar">
-                            <ul class="my-list-of-headers">
+                            <ul id="my-list-of-headers">
                                 <li><a href="#Home" class="navbar-styling">Home</a></li>
                                 <li><a href="#About-me" class="navbar-styling">About Me</a></li>
                                 <li><a href="#Skills" class="navbar-styling">Skills</a></li>
@@ -41,6 +57,7 @@
                 </div>
             </header>
 
+            <!---------------------- section home ---------------------->
             <section id="Home">
                 <div class="welcome-section-with-developer-type">
                     <h1>Hey there, I'm Felix <span class="diff-style-for-surname">Baah</span>, your web developer Wizard! 🌟</h1>
@@ -59,6 +76,7 @@
                 </div>
             </section>
 
+            <!---------------------- section about me ---------------------->
             <section id="About-me">
                 <div class="illustrations-of-individuals-collaborating">
                     <img src="images/collaboration-illustration.svg" 
@@ -76,6 +94,7 @@
                 </div>
             </section>
 
+            <!---------------------- section skills ---------------------->
             <section id="Skills">
                 <div class="line-thorugh-the-whole-page-width"></div>
                 <h3>Allow me to unveil <span class="diff-style-tech">My Technology Toolkit!</span></h3>
@@ -103,6 +122,7 @@
                 </div>
             </section>
 
+            <!---------------------- section projects ---------------------->
             <section id="Projects">
                 <div class="line-thorugh-the-whole-page-width"></div>
                 <h4>Here are some of <span class="diff-style-for-projects">My Projects</span></h4>
@@ -144,7 +164,7 @@
                             <p class="project-name">Fylo Landing Page</p>
                             <div class="my-list-linked-projects">
                                 <div class="link-button same-style">
-                                    <a href="https://fylo-landing-page-cite.netlify.app/" class="site-button-style" target="_blank">
+                                    <a href="https://felix221123.github.io/fylo-landing-page/" class="site-button-style" target="_blank">
                                         Preview Site &nbsp;<i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -194,7 +214,7 @@
 
             </section>
 
-            
+            <!---------------------- section contacts ---------------------->
             <section id="Contact">
 
                 <div class="message-logo-for-contact-me">
@@ -263,5 +283,7 @@
             </section>
 
         </main>
+
+        <script src="app.js"></script>
     </body>
 </html>
