@@ -4,8 +4,6 @@ let listOfNavs = document.querySelector('#my-list-of-headers');
 let anchorTagsElements = document.querySelectorAll('#my-list-of-headers li a');
 let portFolio = document.querySelector('.profile-name')
 let homeSection = document.querySelector('section#Home')
-let siteBtn = document.querySelector('.site-button-style');
-let codeBtn = document.querySelector('.code-button-style')
 
 
 listOfNavs.addEventListener('click', function (e) {
