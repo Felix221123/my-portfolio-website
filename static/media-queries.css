@@ -1,3 +1,101 @@
+@media (max-width:768px ) {
+
+    .navbar-on-the-righthandside-profile{
+        overflow: hidden;
+        & #navbar{
+            position: fixed;
+            width: 72%;
+            height: 45%;
+            background-color: hsla(260, 60%, 24%,1);
+            border-radius: 0rem 0rem 0rem 2rem;
+            top:0;
+            right: 0;
+            animation: animate-menu ease-in-out 0.5s;
+            overflow-y: auto;
+            z-index: 99;
+
+            & #my-list-of-headers{
+                position: relative;
+                top: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                row-gap: 1.5rem;
+                bottom: 5%;
+                
+
+                & .navbar-styling{
+                    color: white;
+                    font-size: clamp(1.1rem , 1.2vw , 1.3rem);
+                    text-decoration: underline wavy white;
+                    text-decoration-thickness:0.05rem;
+                    text-underline-position: under;
+                    
+                }
+
+            }
+
+            #close-tbn{
+                position: absolute;
+                top: 3%;
+                font-size: 2rem;
+                right: 10%;
+                color: rgba(243, 95, 73, 0.7);
+            }
+        }
+        
+    }
+    
+}
+
+
+@media (orientation: landscape) and (max-height: 400px){
+
+    .navbar-on-the-righthandside-profile{
+        overflow: hidden;
+
+
+        & #navbar {
+            height: 90%;
+            overflow-y: auto;
+
+        }
+
+       
+        
+    }
+}
+
+
+
+
+@keyframes animate-menu {
+    0%{
+        right:-200px;
+        opacity: 0;
+    }
+    100%{
+        right: 0;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes hide-menu {
+    0% {
+      right: 0;
+      opacity: 1;
+    }
+    100% {
+      right: -200px;
+      opacity: 0;
+    }
+}
+
+
+
+
 
 @media (min-width:768px ){
     .profile-name-and-navbar{
@@ -16,6 +114,10 @@
         }
         #navbar{
             display: block;
+
+            > #close-tbn{
+                display: none;
+            }
 
             > #my-list-of-headers{
                 display: flex;
@@ -127,6 +229,10 @@
         }
         #navbar{
             display: block;
+
+            > #close-tbn{
+                display: none;
+            }
 
             .my-list-of-headers{
                 display: flex;

@@ -121,23 +121,18 @@ header{
 }
 
 .navbar-on-the-righthandside-profile{
+    
     & .fa-bars{
         display: flex;
         justify-content: flex-end;
         color: white;
         font-size: 1.1rem;
     }
+
+
     & #navbar{
         display:none;
-        & .menu-bar{
-            font-size: 2rem;
-            color: white;
-            display: flex;
-            justify-content: flex-end;
-            margin-right:1rem;
-            cursor: pointer;
-            display: none;
-        }
+        
         
         & #my-list-of-headers{
             display: flex;
@@ -150,7 +145,7 @@ header{
                 text-decoration:none;
                 color: var(--color-for-navbars);
                 font-family:var(--fs-3);
-                font-size: 0.9rem;
+                font-size: clamp(1rem , 1.1vw , 1.25rem);
                 font-weight:var(--fw-semi-bold);
                 padding:0rem 0.1rem;
                 
@@ -159,12 +154,9 @@ header{
                     border-radius: 0.4rem;
                     color:hsla(0, 0%, 100%, 0.8);
                     transition:all 0.5s ;
-                }
-
-                
+                }  
             }
 
-            
         }
     }
 }
