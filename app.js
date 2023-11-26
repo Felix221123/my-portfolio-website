@@ -60,9 +60,10 @@ menuBar.addEventListener('click', function () {
 listItems.forEach((element) => {
     element.addEventListener('click', function (e) {
         
-        //this allow applys for when the screen size is less than 768px
+        //this only applys for when the screen size is less than 768px
         if (window.innerWidth <= 768) {
-            navBar.style.display = 'none';
+            navBar.style.animation = 'menu-close ease-in-out 0.5s';
+            navBar.style.opacity = '0'
         }
     })
 })
