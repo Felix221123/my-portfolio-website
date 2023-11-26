@@ -56,7 +56,6 @@ menuBar.addEventListener('click', function () {
 
 })
 
-
 listItems.forEach((element) => {
     element.addEventListener('click', function (e) {
         
