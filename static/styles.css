@@ -749,3 +749,26 @@ h4{
     
 }
 
+@keyframes menu-close {
+    from {
+        right: 0;
+        opacity: 1;
+    }
+    to {
+        right: 255px;
+        opacity: 0;
+    }
+}
+
+@keyframes menu-open {
+    from{
+        right: 255px;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+    
+}
+

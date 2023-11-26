@@ -35,15 +35,23 @@ portFolio.addEventListener('click', function (e) {
 
 //close button for menu to disappear
 closeBtn.addEventListener('click', function () {
-    
-    navBar.style.animation = 'hide-menu 0.5ms ease-in-out';
-    navBar.style.display = 'none'
+    navBar.style.animation = 'menu-close ease-in-out 0.5s';
+    navBar.style.opacity = '0'
 })
+
+navBar.addEventListener('animationend', function (event) {
+    if (event.animationName === 'menu-close') {
+        // Reset animation and hide the menu container after closing animation ends
+        navBar.style.animation = 'none';
+        navBar.style.display = 'none';
+        navBar.style.opacity = '1';
+    }
+});
 
 
 
 menuBar.addEventListener('click', function () {
-    navBar.style.animation = 'animate-menu ease-in-out 0.5s'
+    navBar.style.animation = 'menu-open ease-in-out 0.5s'
     navBar.style.display = 'block';
 
 })
