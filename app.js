@@ -13,17 +13,16 @@ listOfNavs.addEventListener('click', function (e) {
     const target = e.target
     console.log(target + ' is clicked');
 
-    if (target.matches('a')){
+    if (target.matches('a')) {
 
         for (const anchortags of anchorTagsElements) {
             //we reset the color when they are not pressed
-            anchortags.style.color = ''; 
+            anchortags.style.color = '';
         }
-
-        target.style.color = 'white'
+        target.style.color = '#0079FF'
+        target.style.opacity = "0.75"
     }
-      
-})
+});
 
 
 portFolio.addEventListener('click', function (e) {
