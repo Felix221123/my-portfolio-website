@@ -68,15 +68,12 @@ listItems.forEach((element) => {
 
 
 
-//WITH THIS CODE , IT TEST WHETHER THE ELEMENT THAT TRIGGERES 
-//THE EVENT IS EQUAL TO THE ELEMENT AND IT APPEARS, IT HIDES A CONTAINER, EFFECTIVELY
+// Event listener for window click to hide navbar
 window.addEventListener('click', function (e) {
-    //whenever the user clicks anywhere on the screen apart from the navbar,
-    //it should hide the navbar effectively
-    if (e.target === navBar) {
-        navBar.style.display = 'none'
+    if (!navBar.contains(e.target) && e.target !== menuBar && !menuBar.contains(e.target)) {
+        navBar.style.display = 'none';
     }
-})
+});
 
 
 
