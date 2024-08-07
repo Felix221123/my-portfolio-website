@@ -721,14 +721,14 @@ h4 {
         opacity: 1;
     }
     to {
-        right: 255px;
+        right: -255px;
         opacity: 0;
     }
 }
 
 @keyframes menu-open {
     from {
-        right: 255px;
+        right: -255px;
         opacity: 0;
     }
     to {

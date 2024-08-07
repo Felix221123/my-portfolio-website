@@ -1,6 +1,6 @@
 # Felix Baah | Portfolio Website 
 
-This is my personal portfolio site that was built solely on html , css and javascript: )
+This is my personal portfolio site that was built solely on html , css and javascript  : )
 
 
 ### Built with
