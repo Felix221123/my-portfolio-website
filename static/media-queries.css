@@ -128,14 +128,23 @@
 
     #About-me{
         display: grid;
-        place-items: center;
-        grid-template-columns: 50% 50%;
-        padding: 0rem 4vw;
+        grid-template-columns: .5fr .5fr;
+        padding: 0rem 4rem;
+        margin: 2.5rem 0;
+        align-items: center;
+
+        > .illustrations-of-individuals-collaborating{
+            width: 90%;
+
+            > .members-collaboration{
+                width: 100%;
+            }
+        }
 
         .explanation-of-the-illustration{
             & .explanation-styling{
                 font-size:clamp(1.2rem , 1.3vw , 2rem);
-                padding: 0rem 2vw;
+                padding: 0rem 1.5rem;
             }
         }
     }
@@ -178,7 +187,6 @@
             .profile-name{
                 font-size: clamp(1.4rem , 2vw , 3rem);
             }
-
         }
 
     }
@@ -227,14 +235,25 @@
 
     #About-me{
         display: grid;
-        place-items: center;
-        grid-template-columns: 50% 50%;
-        padding: 0rem 4vw;
+        grid-template-columns: .5fr .5fr;
+        padding: 1.5rem 4rem;
+        margin: 2.5rem 0;
+        align-items: center;
+
+        > .illustrations-of-individuals-collaborating{
+            width: 90%;
+
+            > .members-collaboration{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
 
         .explanation-of-the-illustration{
+            width: 100%;
             & .explanation-styling{
                 font-size: clamp(1.3rem , 1.3vw , 1.4rem);
-                padding: 0rem 2vw;
+                padding: 0rem 2rem;
             }
         }
     }

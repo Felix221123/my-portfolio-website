@@ -107,7 +107,7 @@ header {
 }
 
 .profile-name-and-navbar {
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -263,16 +263,19 @@ section#Home {
 #About-me {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 1vw;
+    padding-top: 1.5vw;
 }
+
 
 .illustrations-of-individuals-collaborating {
-    width: 100%;
+    width: 90%;
+    padding: 1rem;
 
     & .members-collaboration {
-        padding: 1rem;
+        width: 100%;
     }
 }
+
 .explanation-of-the-illustration {
     & .explanation-styling {
         font-family: var(--fs-4);
@@ -313,6 +316,7 @@ section#Skills {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    padding: 2.5rem 0;
 
     > .tech-toolkit {
         display: flex;
