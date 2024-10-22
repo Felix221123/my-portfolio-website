@@ -27,9 +27,7 @@ listOfNavs.addEventListener('click', function (e) {
 
 portFolio.addEventListener('click', function (e) {
     //we set the portfolio in case where, its clicked
-    //it gets scrolled into the home sectimn view, we use the scrollIntoView() method
     homeSection.scrollIntoView({behavior : 'smooth'})
-    
 })
 
 //close button for menu to disappear
@@ -57,8 +55,7 @@ menuBar.addEventListener('click', function () {
 
 listItems.forEach((element) => {
     element.addEventListener('click', function (e) {
-        
-        //this only applys for when the screen size is less than 768px
+        //this only applies for when the screen size is less than 768px
         if (window.innerWidth <= 768) {
             navBar.style.animation = 'menu-close ease-in-out 0.5s';
             navBar.style.opacity = '0'
