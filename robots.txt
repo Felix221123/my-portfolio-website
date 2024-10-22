@@ -1,0 +1,11 @@
+# Block Googlebot from accessing a specific folder (/nogooglebot/)
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Allow all other bots to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specify the location of your sitemap to help bots index your site more efficiently
+Sitemap: https://felixbaah.com/sitemap.xml
+

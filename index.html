@@ -3,36 +3,56 @@
     <head>
         <!---------------------- defining and setting meta tags ---------------------->
         <meta charset="UTF-8">
-        <meta name="description" content="Personal Portofolio Website">
+        <meta name="description" content="Personal Portfolio Website of Felix Baah, a Software Developer based in London">
         <meta name="author" content="Felix Baah">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!----------------------browser compability ---------------------->
+        <!----------------------browser compatibility ---------------------->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Adding LinkedIn Profile Meta Tag -->
+        <meta name="linkedin" content="Felix Baah | Student at Nottingham Trent University" />
+        <meta property="linkedin:description" content="Connect with Felix Baah on LinkedIn, a software developer based in London." />
+        <meta property="linkedin:url" content="https://www.linkedin.com/in/felix-baah-938815258/" />
+        <meta name="linkedin:image" property="og:image" content="https://media.licdn.com/dms/image/v2/D4E03AQH6Unrkxyu6HA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719598606960?e=2147483647&v=beta&t=hirM0gyrkc45CmBAXP0axra1__aWGRSRZfn5L18iPyA">
+
+        <!-- Adding GitHub Profile Meta Tag -->
+        <meta name="github" content="GitHub Profile" />
+        <meta property="github:description" content="Check out Felix Baah's projects on GitHub, featuring web development, full-stack applications, and open-source contributions." />
+        <meta property="github:url" content="https://github.com/Felix221123" />
 
         <!---------------------- google fonts ---------------------->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <!---------------------- fontawesome icons ---------------------->
+        <!---------------------- fontAwesome icons ---------------------->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
 
         <!-- Primary Meta Tags -->
-        <meta name="title" content="Felix Baah" />
-        <meta name="description" content="Software Developer" />
-        <meta name="navTitle" content="Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta name="og:title" content="Felix Baah" />
+        <meta name="og:description" content="I’m a university student majoring in Computer Science , passionate about software development 💻 and driven by a curiosity to constantly learn and evolve 🍀. I enjoy playing basketball 🏀, which keeps me balanced and sharp, both on and off the court." />
+        <meta name="og:navTitle" content="Portfolio" />
         <meta property="og:site_name" content="Felix Baah" />
-        <meta itemprop="name" content="Felix Baah" />
+        <meta itemprop="og:name" content="Felix Baah" />
+        <meta property="og:image" content="https://felixbaah.com/assets/images/portfolio-site-icon.jpg" />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="website" />
-        <meta property="twitter:url" content="https://x.com/IxKvfi" />
-        <meta property="twitter:title" content="FFMI" />
-        <meta
-        property="twitter:description"
-        content="Software Developer" />
-        <meta property="twitter:image" content="/asessts/images/portfolio-site-icon.jpg" />
+        <!-- Navigation Meta Tags -->
+        <meta name="nav:home" content="Home - Felix Baah's Portfolio" />
+        <meta name="nav:about" content="About - Learn more about Felix Baah's background in software development" />
+        <meta name="nav:projects" content="Projects - Explore the projects Felix has worked on, including web and full-stack applications" />
+        <meta name="nav:contact" content="Contact - Get in touch with Felix Baah for collaborations or inquiries" />
+
+        <!-- Adding University Name Meta Tag -->
+        <meta name="university" content="Nottingham Trent University" />
+        <meta property="university:description" content="Felix Baah is currently a student at Nottingham Trent University, pursuing a BSc in Computer Science." />
+
+        <!-- Robots Meta Tag to allow crawling -->
+        <meta name="robots" content="index, follow" />
+
+        <!-- Add an icon for Apple devices -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/portfolio-site-icon.jpg">
 
         <!---------------------- stylesheets ---------------------->
         <link rel="stylesheet" href="static/styles.css">
@@ -81,10 +101,16 @@
                 </div>
 
                 <div class="my_avatar-profile-section">
-                    <img src="./asessts/images/profile.jpg"
-                     alt="Looks like an image of me"
-                     class="avatar-pic"
-                     >
+                    <picture>
+                        <source srcset="./asessts/images/profile.webp" type="image/webp">
+                        <source srcset="./asessts/images/profile.jpg" type="image/jpg">
+                        <img src="./asessts/images/profile.jpg"
+                        alt="Looks like an image of me"
+                        class="avatar-pic"
+                        width="clamp(20rem, 22rem, 25rem)"
+                        height="clamp(20rem, 22rem, 25rem)"
+                        >
+                    </picture>
                 </div>
             </section>
 
@@ -110,19 +136,19 @@
 
                 <div class="tech-toolkit">
                     <div class="my-list-stack">
-                        <img src="asessts/svg/python.svg" alt="python icon">
+                        <img src="asessts/svg/python.svg" alt="python icon" style="width: 2rem;">
                         <img src="asessts/svg/cpp.svg" alt="c++ icon" style="width: 2rem;">
-                        <img src="asessts/svg/javascript.svg" alt="javascript icon">
-                        <img src="asessts/svg/java.svg" alt="java icon">
-                        <img src="asessts/svg/typescript.svg" alt="typescript icon">
+                        <img src="asessts/svg/javascript.svg" alt="javascript icon" style="width: 2rem;">
+                        <img src="asessts/svg/java.svg" alt="java icon" style="width: 2rem;">
+                        <img src="asessts/svg/typescript.svg" alt="typescript icon" style="width: 2rem;">
                     </div>
                     <div class="my-list-stack">
-                        <img src="asessts/svg/html5 badge.svg" alt="html svg icon">
-                        <img src="asessts/svg/css3 badge.svg" alt="css icon">
-                        <img src="asessts/svg/tailwindcss.svg" alt="tailwind css icons">
-                        <img src="asessts/svg/react.svg" alt="react icon">
-                        <img src="asessts/svg/jquery.svg" alt="jquery icon">
-                        <img src="asessts/svg/firebase.svg" alt="firebase icon">
+                        <img src="asessts/svg/html5 badge.svg" alt="html svg icon" style="width: 2rem;">
+                        <img src="asessts/svg/css3 badge.svg" alt="css icon" style="width: 2rem;">
+                        <img src="asessts/svg/tailwindcss.svg" alt="tailwind css icons" style="width: 2rem;">
+                        <img src="asessts/svg/react.svg" alt="react icon" style="width: 2rem;">
+                        <img src="asessts/svg/jquery.svg" alt="jquery icon" style="width: 2rem;">
+                        <img src="asessts/svg/firebase.svg" alt="firebase icon" style="width: 2rem;">
                     </div>
                     <div class="second-list">
                         <img src="asessts/svg/expressjs-dark.svg" alt="expressjs icon" style="width: 2rem;">
@@ -151,7 +177,11 @@
                     <!-- first project here -->
                     <div class="first-project-listed project-style">
                         <div class="project-image-container">
-                            <img src="asessts/images/taaskify.png" alt="taaskify image" >
+                            <picture>
+                                <source srcset="asessts/images/taaskify.webp" type="image/webp">
+                                <source srcset="asessts/images/taaskify.png" type="image/png">
+                                <img src="asessts/images/taaskify.png" alt="taaskify image" >
+                            </picture>
                         </div>
                         <div class="project-links-container-with-project-name">
                             <p class="project-header" style="padding: 0rem 1.5rem;">Taaskify | Kanban Management Platform 💻</p>
@@ -173,7 +203,11 @@
                     <!-- second project here -->
                     <div class="second-project-listed project-style">
                         <div class="project-image-container">
-                            <img src="asessts/images/ecommerce-site.png" alt="ecommerce image" >
+                            <picture>
+                                <source srcset="asessts/images/ecommerce-site.webp" type="image/webp">
+                                <source srcset="asessts/images/ecommerce-site.png" type="image/png">
+                                <img src="asessts/images/ecommerce-site.png" alt="e-commerce image" >
+                            </picture>
                         </div>
                         <div class="project-links-container-with-project-name">
                             <p class="project-header">Audiophile E-Commerce Site 🎧</p>
@@ -199,12 +233,16 @@
                     <!-- third project here -->
                     <div class="third-project-listed project-style">
                         <div class="project-image-container">
-                            <img src="asessts/images/entertainment-web-app.png" alt="entertainement web app" >
+                            <picture>
+                                <source srcset="asessts/images/entertainment-web-app.webp" type="image/webp">
+                                <source srcset="asessts/images/entertainment-web-app.png" type="image/png">
+                                <img src="asessts/images/entertainment-web-app.png" alt="entertainment web app" >
+                            </picture>
                         </div>
                         <div class="project-links-container-with-project-name">
                             <p class="project-header">Entertainment Web App 🎬</p>
                             <p class="project-description">
-                                An Entertaiment Web Application that provides User Authentication for log in and sign up into the application.Provides users with search functionality and bookmarking their favorite tv series and movies and as well as remove them.
+                                An Entertainment Web Application that provides User Authentication for log in and sign up into the application.Provides users with search functionality and bookmarking their favorite tv series and movies and as well as remove them.
                             </p>
                             <div class="tools-Used">
                                 <p class="tool-1">ReactJS && Typescript</p>
