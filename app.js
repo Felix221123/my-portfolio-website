@@ -67,7 +67,7 @@ listItems.forEach((element) => {
 
 // Event listener for window click to hide navbar
 window.addEventListener('click', function (e) {
-    if (!navBar.contains(e.target) && e.target !== menuBar && !menuBar.contains(e.target)) {
+    if (!navBar.contains(e.target) && e.target !== menuBar && !menuBar.contains(e.target) && this.window.innerWidth <= 767) {
         navBar.style.display = 'none';
     }
 });
