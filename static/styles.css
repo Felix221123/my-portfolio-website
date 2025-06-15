@@ -192,7 +192,8 @@ section#Home {
         & h1 {
             text-align: center;
             font-family: var(--fs-4);
-            font-size: clamp(2.35rem, 2.35vw, 2.4rem);
+            font-size: 2.4rem;
+            margin-block: 1em;
             padding: 0rem 1rem;
             color: var(--color-for-navbars);
             animation: header-1 1.5s ease-in-out 1;
