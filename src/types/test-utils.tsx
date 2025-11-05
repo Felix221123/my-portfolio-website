@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 
 const customRender = (ui: React.ReactElement, options = {}) =>
-  render(<ThemeProvider theme={theme}>{ui}</ThemeProvider>, options);
+    render(<ThemeProvider theme={theme}>{ui}</ThemeProvider>, options);
 
 
 export { customRender as render }; // Override render function

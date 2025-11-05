@@ -111,6 +111,10 @@ export const fontSize150px = () => css`
   font-size: clamp(9.05rem, 9.1vw, 9.15rem);
 `;
 
+export const fontSize200px = () => css`
+  font-size: clamp(12rem,12.05vw, 12.1rem);
+`;
+
 export const fontSize110px = () => css`
   font-size: clamp(6.875rem, 6.9vw, 6.95rem);
 `;
@@ -150,9 +154,9 @@ export const hiddenElementMoreThan1440px = css`
   }
 `
 
-export const SizeofOriginalContentsForDevicesMoreThan1440px = css`
+export const SizeofOriginalContentsForDevicesMoreThan1740px = css`
   @media (min-width:1740px) {
-    width: 90rem;
+    width: 108rem;
     margin-inline: auto;
 }
 `
