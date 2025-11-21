@@ -13,7 +13,7 @@ export const Site: React.FC = () => {
     // const contactSection = useRef<HTMLDivElement>(null);
 
 
-    // // scrolling to the section
+    // scrolling to the section
     // const scrollIntoView = (ref: React.RefObject<HTMLDivElement> | undefined) => {
     //     ref?.current?.scrollIntoView({ behavior: 'smooth' });
     // }

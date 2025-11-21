@@ -20,7 +20,7 @@ export const HeroContainer = styled.header`
     box-shadow:none;
     background-color: ${theme.colors.greyPrimaryElevated};
     position: relative;
-     z-index: ${theme.zIndex.navbar};
+    z-index: ${theme.zIndex.navbar};
 
     .hero-content {
         position:sticky;
