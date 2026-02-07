@@ -11,6 +11,7 @@ const theme = {
         reallyDark: "#10141e",
         greyPrimaryElevated:"76797A",
         lightRoyalBlue:"D1D2D3",
+        peachClr:"#FFEED9"
     },
     fonts: {
         raleway: "'Raleway', sans-serif",

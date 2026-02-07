@@ -1,5 +1,7 @@
 // mixins object
 import { css, createGlobalStyle } from 'styled-components'
+import theme from './theme';
+
 
 interface GlobalStyleProps {
   lockScroll?: boolean;
@@ -154,8 +156,8 @@ export const hiddenElementMoreThan1440px = css`
   }
 `
 
-export const SizeofOriginalContentsForDevicesMoreThan1740px = css`
-  @media (min-width:1740px) {
+export const SizeofOriginalContentsForDevicesMoreThan2000px = css`
+  @media (min-width:2000px) {
     width: 108rem;
     margin-inline: auto;
 }
@@ -194,3 +196,15 @@ export const fontStyles = (ftFamily: string, ftWeight: string, textClr: string, 
   line-height: ${lineHeight};
   letter-spacing: ${ltSpacing};
 `
+
+export const ParagraphStyle = () => css`
+    font-family: ${theme.fonts.openSans};
+    color: ${theme.colors.greyPrimaryElevated};
+    ${fontSize18px};
+    line-height: 1.25rem;
+    font-weight: 300;
+
+    @media(max-width:768px){
+        ${fontSize15px}
+    }
+`;
