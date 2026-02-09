@@ -11,7 +11,8 @@ import {
     fontSize70px,
     fontSize110px,
     ParagraphStyle,
-    fontSize50px
+    fontSize50px,
+    fontSize18px
 } from '@/styles/mixin';
 import theme from '@/styles/theme';
 import styled from 'styled-components';
@@ -160,7 +161,7 @@ export const MenuContainer = styled.div`
 
 export const HeroContainer = styled.div`
     width:100%;
-    min-height: calc(100vh - 30vh);
+    min-height: calc(100vh - 25vh);
     ${flexCenter('column', 'flex-end')};
     align-items: flex-start;
     padding:1.5rem 2rem;
@@ -361,6 +362,17 @@ export const Projects = styled.div`
     padding: 2.5rem 2rem;
     gap: 1rem;
 
+    > h4 {
+    font-family: ${theme.fonts.urbanist};
+    ${fontSize70px};
+    font-weight: 800;
+    letter-spacing: 0.15rem;
+
+        @media(max-width:768px){
+            ${fontSize50px}
+        }
+    }
+
 `
 
 
@@ -435,6 +447,11 @@ export const Contact = styled.footer`
                     height: 6rem;
                     padding: 1.5rem;
 
+                     @media (max-width: 767px){
+                        width: 4.5rem;
+                        height: 4.5rem;
+                    }
+
                     > img {
                         width: 100%;
                         height: 100%;
@@ -452,7 +469,7 @@ export const Contact = styled.footer`
 
 
                 @media(max-width:768px){
-                    ${fontSize20px}
+                    ${fontSize18px}
                 }
             }
         }
@@ -465,6 +482,10 @@ export const Contact = styled.footer`
         margin-bottom:1rem;
         align-items:center;
         justify-content: space-between;
+
+        @media (max-width: 767px){
+            ${flex('column')};
+        }
 
         > .leftSection {
             ${flex('column')};
@@ -489,6 +510,11 @@ export const Contact = styled.footer`
                             padding: 1.5rem;
                             cursor: pointer;
 
+                            @media (max-width: 767px){
+                                width: 4.5rem;
+                                height: 4.5rem;
+                            }
+
                             > img {
                                 width: 100%;
                                 height: 100%;
@@ -506,7 +532,8 @@ export const Contact = styled.footer`
             }
                 
             > .copyrights{
-                ${ParagraphStyle}
+                ${ParagraphStyle};
+                font-weight: 500;
             }
         }
 

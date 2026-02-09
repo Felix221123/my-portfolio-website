@@ -221,13 +221,6 @@ export const Hero: React.FC = () => {
 
 
 
-
-
-
-
-
-
-
             {
                 openMenu &&
                 (
