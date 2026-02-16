@@ -204,7 +204,7 @@ export const ParagraphStyle = () => css`
     line-height: 1.25rem;
     font-weight: 300;
 
-    @media(max-width:768px){
+    @media(max-width:767px){
         ${fontSize15px}
     }
 `;

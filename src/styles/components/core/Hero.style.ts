@@ -12,7 +12,9 @@ import {
     fontSize110px,
     ParagraphStyle,
     fontSize50px,
-    fontSize18px
+    fontSize18px,
+    fontSize45px,
+    fontSize65px
 } from '@/styles/mixin';
 import theme from '@/styles/theme';
 import styled from 'styled-components';
@@ -56,7 +58,7 @@ export const NavigationBar = styled.header`
                 font-family: ${theme.fonts.urbanist};
                 font-weight: 600;
 
-                @media(min-width:768px){ 
+                @media(min-width:768px){
                     ${fontSize24px};
                 }
             }
@@ -109,7 +111,7 @@ export const MenuContainer = styled.div`
         right: 10%;
         width: 2rem;
         height:2rem;
-        
+
         img {
             width:100%;
             width:100%;
@@ -146,11 +148,13 @@ export const MenuContainer = styled.div`
                 color: ${theme.colors.greyPrimaryElevated};
                 font-weight:600;
                 letter-spacing:0.2rem;
+                margin-left: 0;
+                transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-                &:hover, :active, :focus {
+
+                &:hover, &:active, &:focus {
                     margin-left: 1.5rem;
                     color: ${theme.colors.lightBlue};
-                    transition:all 0.2s ease-in-out;
                 }
 
             }
@@ -169,7 +173,7 @@ export const HeroContainer = styled.div`
     gap: 6rem;
 
 
-    @media(max-width:1200px){ 
+    @media(max-width:1200px){
         gap: 1.5rem;
         min-height: calc(100vh - 20vh);
     }
@@ -177,8 +181,8 @@ export const HeroContainer = styled.div`
 
     > .description{
         ${ParagraphStyle};
-        
-        @media(min-width:768px){ 
+
+        @media(min-width:768px){
             padding:0 50% 0 0;
         }
     }
@@ -190,17 +194,18 @@ export const HeroContainer = styled.div`
         line-height: 1.25rem;
         font-weight: 900;
         letter-spacing: 0.15rem;
-        
-        @media(max-width:1350px){ 
+
+        @media(max-width:1350px){
             ${fontSize150px};
             line-height: 7rem;
         }
-        @media(max-width:1200px){ 
+        @media(max-width:1200px){
             ${fontSize110px};
             line-height: 5.5rem;
         }
     }
 `
+
 export const AboutMeSection = styled.div`
     ${flex('column')};
     margin-top: 8rem;
@@ -233,11 +238,13 @@ export const AboutMeSection = styled.div`
             height: 100%;
             object-fit:cover;
             border-radius: 100%;
-            
+            transform: scale(1);
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-            &:hover {
-                transform: scale(1.2);
-                transition:transform ease-in-out 0.5s;
+
+
+            &:hover{
+                transform: scale(1.1);
             }
         }
 
@@ -246,7 +253,7 @@ export const AboutMeSection = styled.div`
 
     > .aboutMeText {
         ${flex('column')};
-        gap: 1rem; 
+        gap: 1rem;
 
         > h2 {
             font-family: ${theme.fonts.urbanist};
@@ -255,7 +262,7 @@ export const AboutMeSection = styled.div`
             font-weight: 800;
             letter-spacing: 0.15rem;
 
-            @media(max-width:768px){
+            @media(max-width:767px){
                 ${fontSize50px}
             }
         }
@@ -265,7 +272,7 @@ export const AboutMeSection = styled.div`
             text-align: right;
             padding:0 0 0 3rem;
 
-            @media(max-width:768px){
+            @media(max-width:767px){
                 padding:0;
             }
         }
@@ -285,7 +292,7 @@ export const AboutMeSection = styled.div`
                     cursor: pointer;
                     border-radius: 40%;
 
-                    @media(max-width:768px){
+                    @media(max-width:767px){
                         width: 3.5rem;
                         height: 3.5rem;
                     }
@@ -302,6 +309,7 @@ export const AboutMeSection = styled.div`
     }
 
 `
+
 export const WorkExperience = styled.div`
     ${flexCenter('column', 'center')};
     margin-top: 8rem;
@@ -314,9 +322,10 @@ export const WorkExperience = styled.div`
         ${fontSize70px};
         font-weight: 800;
         letter-spacing: 0.15rem;
+        line-height: 3rem;
 
-        @media(max-width:768px){
-            ${fontSize50px}
+        @media(max-width:767px){
+            ${fontSize45px};
         }
     }
 
@@ -335,7 +344,7 @@ export const WorkExperience = styled.div`
             ${flexCenter('column', 'space-around')};
         }
 
-        > .ImgContainer {  
+        > .ImgContainer {
             width: 25rem;
             height: 10rem;
             border-radius: 1rem;
@@ -345,7 +354,7 @@ export const WorkExperience = styled.div`
                 height: 10rem;
             }
 
-            > img { 
+            > img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -356,210 +365,333 @@ export const WorkExperience = styled.div`
 `
 
 export const Projects = styled.div`
-    ${flexCenter('column', 'center')};
+    ${flex('column')};
     margin-top: 8rem;
     ${SizeofOriginalContentsForDevicesMoreThan2000px};
     padding: 2.5rem 2rem;
     gap: 1rem;
 
-    > h4 {
-    font-family: ${theme.fonts.urbanist};
-    ${fontSize70px};
-    font-weight: 800;
-    letter-spacing: 0.15rem;
+    .projectHeaderDescription {
+        ${flex('column')};
+        gap: 1rem;
 
-        @media(max-width:768px){
-            ${fontSize50px}
+        > h4 {
+            font-family: ${theme.fonts.urbanist};
+            ${fontSize70px};
+            font-weight: 800;
+            letter-spacing: 0.15rem;
+            text-align: left;
+            line-height: 3rem;
+
+            @media(max-width:767px){
+                ${fontSize45px};
+            }
         }
+
+        > p {
+            font-family: ${theme.fonts.urbanist};
+            ${fontSize24px};
+            font-weight: 600;
+            letter-spacing: 0.15rem;
+            line-height: 2rem;
+
+            @media(max-width:767px){
+                padding:0;
+            }
+        }
+
     }
 
 `
 
+export const ProjectCardContainer = styled.div<{ $reverse?: boolean }>`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 5%;
+    margin-top: 3rem;
 
-export const Contact = styled.footer`
-    ${flex('column')};
-    margin-top: 8rem;
-    ${SizeofOriginalContentsForDevicesMoreThan2000px};
-    padding: 4rem 2rem;
-    gap: 1.5rem;
-    background-color:${theme.colors.peachClr};
+    @media(max-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-    > .headingContainer{
-        ${flexCenter('row', 'space-between')};
+    > .videoContainer {
+        order: ${({ $reverse }) => ($reverse ? 2 : 1)};
+        width: 100%;
+        height: 30rem;
+        border-radius: 8rem 8rem 8rem 0;
+        overflow: hidden;
+        background-color: ${theme.colors.lightGrey};
 
         @media(max-width: 1000px){
-            ${flexCenter('column', 'flex-end')};
-            gap: 2.5rem;
+            width: 100%;
+            height: 20rem;
+            border-radius: 4rem 4rem 4rem 0;
         }
 
-        > .headerText{
-            ${flexCenter('column', 'flex-end')};
-            align-items:flex-end;
-            gap:1.5rem;
+        > video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    }
 
-            > h5 {
-                font-family: ${theme.fonts.urbanist};
-                ${fontSize70px};
-                font-weight: 800;
-                letter-spacing: 0.15rem;
-                text-align: right;
-                line-height: 3rem;
+    > .textSection {
+        order: ${({ $reverse }) => ($reverse ? 1 : 2)};
+        ${flexCenter('column','space-evenly')};
+        align-items: flex-start;
+        gap: 2%;
+        padding: 2rem 0;
 
-                @media(max-width:768px){
-                    ${fontSize50px}
-                }
+        @media(max-width: 1000px){
+            gap: 2rem;
+        }
+
+        > .link_projectType {
+            ${flex('row')};
+            align-items: center;
+            text-decoration: none;
+            font-family: ${theme.fonts.urbanist};
+            ${fontSize24px};
+            font-weight: 700;
+            letter-spacing: 0.15rem;
+            color: ${theme.colors.greyPrimaryElevated};
+            margin-left: 0;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+            @media(max-width:767px){
+                ${fontSize18px}
             }
 
-            > .footerDescription{
-                ${ParagraphStyle};
-                text-align: right;
-                padding: 0 0 0 20%;
+            &:hover {
+                margin-left: 1.5rem;
+                color: ${theme.colors.lightBlue};
+            }
+        }
 
+        > article {
+            font-family: ${theme.fonts.urbanist};
+            ${fontSize65px};
+            line-height: 4rem;
+            font-weight: 800;
+            letter-spacing: 0.15rem;
+
+            @media(max-width:767px){
+                ${fontSize32px};
+                line-height: 2.5rem;
+            }
+        }
+
+        > .projectDescription {
+            font-family: ${theme.fonts.urbanist};
+            ${fontSize24px};
+            font-weight: 400;
+            letter-spacing: 0.15rem;
+            line-height: 2rem;
+
+            @media(max-width:767px){
+                ${fontSize18px};
+                line-height: 1.5rem;
             }
         }
     }
 
-    > .contactDetails{
+
+`
+
+
+
+export const Contact = styled.footer`
+    background-color:${theme.colors.peachClr};
+
+    > .innerContainer {
         ${flex('column')};
-        gap:1rem;
-        margin-top: 3rem;
-        margin-bottom:3rem;
+        margin-top: 8rem;
+        ${SizeofOriginalContentsForDevicesMoreThan2000px};
+        padding: 4rem 2rem;
+        gap: 1.5rem;
 
-        > .container {
-            ${flex('row')};
-            align-items:center;
-            gap: 2.5rem;
+        > .headingContainer{
+            ${flexCenter('row', 'space-between')};
 
-            @media(max-width:768px){
-                ${flex('column')};
-                align-items:flex-start;
-                gap: 1rem;
+            @media(max-width: 1000px){
+                ${flexCenter('column', 'flex-end')};
+                gap: 2.5rem;
             }
 
-            > .img {
-                ${flexCenter('column', 'center')};
-                gap: 0.5rem;
-                
-                > .imgContainer {
-                    border: 2px solid black;
-                    border-radius: 50%;
-                    width: 6rem;
-                    height: 6rem;
-                    padding: 1.5rem;
+            > .headerText{
+                ${flexCenter('column', 'flex-end')};
+                align-items:flex-end;
+                gap:1.5rem;
 
-                     @media (max-width: 767px){
-                        width: 4.5rem;
-                        height: 4.5rem;
+                > h5 {
+                    font-family: ${theme.fonts.urbanist};
+                    ${fontSize70px};
+                    font-weight: 800;
+                    letter-spacing: 0.15rem;
+                    text-align: right;
+                    line-height: 3rem;
+
+                    @media(max-width:767px){
+                        ${fontSize45px};
                     }
+                }
+
+                > .footerDescription{
+                    ${ParagraphStyle};
+                    text-align: right;
+                    padding: 0 0 0 20%;
+
+                }
+            }
+        }
+
+        > .contactDetails{
+            ${flex('column')};
+            gap:1rem;
+            margin-top: 3rem;
+            margin-bottom:3rem;
+
+            > .container {
+                ${flex('row')};
+                align-items:center;
+                gap: 2.5rem;
+
+                @media(max-width:767px){
+                    ${flex('column')};
+                    align-items:flex-start;
+                    gap: 1rem;
+                }
+
+                > .img {
+                    ${flexCenter('column', 'center')};
+                    gap: 0.5rem;
+
+                    > .imgContainer {
+                        border: 2px solid black;
+                        border-radius: 50%;
+                        width: 6rem;
+                        height: 6rem;
+                        padding: 1.5rem;
+
+                        @media (max-width: 767px){
+                            width: 4.5rem;
+                            height: 4.5rem;
+                        }
+
+                        > img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit:cover;
+                        }
+
+                    }
+                }
+
+                > a {
+                    font-family: ${theme.fonts.urbanist};
+                    ${fontSize32px};
+                    font-weight: 800;
+                    letter-spacing: 0.25rem;
+
+
+                    @media(max-width:767px){
+                        ${fontSize18px}
+                    }
+                }
+            }
+        }
+
+        > .socials{
+            ${flex('row')};
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom:1rem;
+            align-items:center;
+            justify-content: space-between;
+
+            @media (max-width: 767px){
+                ${flex('column')};
+            }
+
+            > .leftSection {
+                ${flex('column')};
+                gap: 1rem;
+
+                .content {
+                    ${flex('row')};
+                    gap: 1rem;
+
+                    > .container {
+                        ${flex('row')};
+                        align-items: center;
+
+                        > .img {
+                            ${flexCenter('column', 'center')};
+
+                            > .imgContainer {
+                                border: 2px solid black;
+                                border-radius: 50%;
+                                width: 6rem;
+                                height: 6rem;
+                                padding: 1.5rem;
+                                cursor: pointer;
+
+                                @media (max-width: 767px){
+                                    width: 4.5rem;
+                                    height: 4.5rem;
+                                }
+
+                                > img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit:cover;
+                                    transform: scale(1);
+                                    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+
+                                    &:hover{
+                                        transform:scale(1.1);
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                > .copyrights{
+                    ${ParagraphStyle};
+                    font-weight: 500;
+                }
+            }
+
+            > .rightSection{
+                ${flexCenter('column', 'center')};
+
+                > .logo {
+                    border-radius: 50%;
+                    width: 15rem;
+                    height: 15rem;
+                    padding: 1.5rem;
 
                     > img {
                         width: 100%;
                         height: 100%;
                         object-fit:cover;
+                        border-radius: 50%;
                     }
 
                 }
             }
 
-            > a {
-                font-family: ${theme.fonts.urbanist};
-                ${fontSize32px};
-                font-weight: 800;
-                letter-spacing: 0.25rem;
 
 
-                @media(max-width:768px){
-                    ${fontSize18px}
-                }
-            }
         }
-    }
-
-    > .socials{
-        ${flex('row')};
-        gap: 1rem;
-        margin-top: 1rem;
-        margin-bottom:1rem;
-        align-items:center;
-        justify-content: space-between;
-
-        @media (max-width: 767px){
-            ${flex('column')};
-        }
-
-        > .leftSection {
-            ${flex('column')};
-            gap: 1rem;
-
-            .content {
-                ${flex('row')};
-                gap: 1rem;
-
-                > .container {
-                    ${flex('row')};
-                    align-items: center;
-
-                    > .img {
-                        ${flexCenter('column', 'center')};
-                        
-                        > .imgContainer {
-                            border: 2px solid black;
-                            border-radius: 50%;
-                            width: 6rem;
-                            height: 6rem;
-                            padding: 1.5rem;
-                            cursor: pointer;
-
-                            @media (max-width: 767px){
-                                width: 4.5rem;
-                                height: 4.5rem;
-                            }
-
-                            > img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit:cover;
-
-                                &:hover{
-                                    transform:scale(1.1);
-                                    transition: transform ease-in-out 0.5s;
-                                }
-                            }
-
-                        }
-                    }
-                }  
-            }
-                
-            > .copyrights{
-                ${ParagraphStyle};
-                font-weight: 500;
-            }
-        }
-
-        > .rightSection{
-            ${flexCenter('column', 'center')};
-                    
-            > .logo {
-                border-radius: 50%;
-                width: 15rem;
-                height: 15rem;
-                padding: 1.5rem;
-
-                > img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit:cover;
-                    border-radius: 50%;
-                }
-
-            }
-        }
-
-
 
     }
-
 
 `
 
