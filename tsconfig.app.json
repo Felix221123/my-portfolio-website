@@ -23,13 +23,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "ignoreDeprecations": "6.0",
 
     /* reloading path */
-    "baseUrl": "./src",
     "paths": {
-      "@/*": ["*"]
+        "@/*": ["./src/*"]
     }
-  },
+},
   "include": ["src", "cypress", "cypress.d.ts"]
 }
