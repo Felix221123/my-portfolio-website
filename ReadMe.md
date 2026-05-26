@@ -257,4 +257,3 @@ Happy coding!
 - [Cypress Documentation](https://www.cypress.io/)
 
 ---
-

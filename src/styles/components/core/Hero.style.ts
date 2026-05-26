@@ -241,8 +241,6 @@ export const AboutMeSection = styled.div`
             transform: scale(1);
             transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-
-
             &:hover{
                 transform: scale(1.1);
             }
@@ -278,7 +276,7 @@ export const AboutMeSection = styled.div`
         }
 
         > .socialsIcon {
-            ${flexCenter('row', 'flex-end')};
+            ${flexCenter('row', 'space-around')};
             gap: 0.25rem;
 
             > .socials {
@@ -402,6 +400,11 @@ export const Projects = styled.div`
 
     }
 
+    > .projectContainer {
+        ${flex('column')};
+        gap: 6rem;
+    }
+
 `
 
 export const ProjectCardContainer = styled.div<{ $reverse?: boolean }>`
@@ -420,21 +423,21 @@ export const ProjectCardContainer = styled.div<{ $reverse?: boolean }>`
         order: ${({ $reverse }) => ($reverse ? 2 : 1)};
         width: 100%;
         height: 30rem;
-        border-radius: 8rem 8rem 8rem 0;
+        border-radius: 1.5rem 1.5rem 1.5rem 0;
         overflow: hidden;
         background-color: ${theme.colors.lightGrey};
 
         @media(max-width: 1000px){
             width: 100%;
             height: 20rem;
-            border-radius: 4rem 4rem 4rem 0;
+            border-radius: 1.5rem 1.5rem 1.5rem 0;
         }
 
         > video {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 1rem;
+            border-radius: 1.5rem 1.5rem 1.5rem 0;
         }
     }
 
