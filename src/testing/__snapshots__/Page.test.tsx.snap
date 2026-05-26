@@ -1,0 +1,809 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Portfolio Website > Snapshot > should match the app snapshot 1`] = `
+<div>
+  <header
+    class="sc-bRKDuR bSbbFT"
+  >
+    <div
+      class="hero-content"
+    >
+      <div
+        class="hero-content-inner-left"
+      >
+        <div
+          class="logo"
+        >
+          <img
+            alt="logo"
+            src="/src/assets/images/portfolio-site-icon.webp"
+          />
+        </div>
+        <div
+          class="title font-bold"
+        >
+          Felix Baah
+        </div>
+      </div>
+      <div
+        class="hero-content-inner-right cursor-pointer"
+      >
+        <div
+          class="menu-text font-medium"
+        >
+          Menu
+        </div>
+        <img
+          alt="menu icon"
+          src="/src/assets/svg/menu.svg"
+        />
+      </div>
+    </div>
+  </header>
+  <div
+    class="sc-fhHczv kAPMbD"
+    id="home"
+  >
+    <p
+      class="description"
+    >
+      Full Stack Software Developer, who loves turning ideas into scalable digital experiences and what's more I enjoy the whole process.
+    </p>
+    <h1
+      class="name"
+    >
+      Felix Baah.
+    </h1>
+  </div>
+  <div
+    class="sc-ggWZvA itPkCH"
+    id="about"
+  >
+    <div
+      class="imageContainer"
+    >
+      <img
+        alt="about me pic"
+        src="/src/assets/images/profile.jpeg"
+      />
+    </div>
+    <div
+      class="aboutMeText"
+    >
+      <h2>
+        Who I am?
+      </h2>
+      <div
+        class="description"
+      >
+        Hi I am Felix Baah, a Full-Stack Software Developer who enjoys building things in the digital world and staying ahead of how technology evolves.Outside of tech, I’m deeply into fitness including running, basketball, padel etc, and training keep me disciplined and sharp. I always put God first, and that mindset guides how I grow, work, and live.My interests go beyond software into finance and other industries, because I don’t believe in limiting myself to one lane.
+      </div>
+      <div
+        class="socialsIcon"
+      >
+        <div
+          class="socials"
+        >
+          <a
+            href="https://www.linkedin.com/in/felix-baah-938815258/"
+            target="_blank"
+          >
+            <img
+              alt="linkedin icon"
+              src="/src/assets/svg/Linkedin.svg"
+            />
+          </a>
+          <a
+            href="https://x.com/_felix_bh"
+            target="_blank"
+          >
+            <img
+              alt="twitter icon"
+              src="/src/assets/svg/Twitter.svg"
+            />
+          </a>
+          <a
+            href="https://github.com/Felix221123"
+            target="_blank"
+          >
+            <img
+              alt="github icon"
+              src="/src/assets/svg/Github%20Logo.svg"
+            />
+          </a>
+        </div>
+        <img
+          alt="arrow left"
+          src="/src/assets/svg/arrow_left.svg"
+        />
+        <div
+          class="text"
+        >
+          I am also here
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-dTvVRJ ewqYml"
+    id="experience"
+  >
+    <h3>
+      Work Experience
+    </h3>
+    <div
+      class="description"
+    >
+      Amazing Companies I’ve Worked With
+    </div>
+    <div
+      class="imageContainer"
+    >
+      <div
+        class="ImgContainer"
+      >
+        <img
+          alt="tribal world wide"
+          src="/src/assets/images/tribal_image.png"
+        />
+      </div>
+      <div
+        class="ImgContainer"
+      >
+        <img
+          alt="tribal world wide"
+          src="/src/assets/images/critical_mass.png"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-jwTyAe eQmVSn"
+    id="projects"
+  >
+    <div
+      class="projectHeaderDescription"
+    >
+      <h4>
+        Founded & Latest Projects
+      </h4>
+      <p>
+        A collection of projects I've worked on for clients and myself. Each one tells a story
+      </p>
+    </div>
+    <div
+      class="projectContainer"
+    >
+      <div
+        class="sc-hjsuWn dNerTK"
+      >
+        <div
+          class="videoContainer"
+        >
+          <video
+            autoplay=""
+            loop=""
+            src="https://www.youtube.com/watch?v=wlrVeeJhczY"
+          />
+        </div>
+        <div
+          class="textSection"
+        >
+          <a
+            class="link_projectType"
+            href="https://github.com/Felix221123/Sunny-Side-Landing-Page/blob/main/src/components/TextImageGrid.tsx"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              class="projectType"
+            >
+              Landing Page
+               
+            </div>
+            <img
+              alt="arrow on the right"
+              src="/src/assets/svg/arrow_right.svg"
+            />
+          </a>
+          <article
+            class="projectTitle"
+          >
+            Design Agency Web Design Landing Page
+          </article>
+          <p
+            class="projectDescription"
+          >
+            Hi! I’m a UI/UX Designer creating bold & brave interface design for companies all across the world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    class="sc-jJLAfE bWPUhQ"
+    id="contact"
+  >
+    <div
+      class="innerContainer"
+    >
+      <div
+        class="headingContainer"
+      >
+        <div
+          class="headerImageContainer"
+        >
+          <img
+            alt="header image"
+            src="/src/assets/svg/contact_img.svg"
+          />
+        </div>
+        <div
+          class="headerText"
+        >
+          <h5>
+            Want to work with me?
+          </h5>
+          <p
+            class="footerDescription"
+          >
+            Always happy to chat and hear your feedback, questions, or suggestions. Whether you want to discuss a project, collaborate on a design, or just say hi, feel free to reach out to me anytime.
+          </p>
+        </div>
+      </div>
+      <div
+        class="contactDetails"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="img"
+          >
+            <div
+              class="imgContainer"
+            >
+              <img
+                alt="email"
+                src="/src/assets/svg/email.svg"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Email
+            </div>
+          </div>
+          <a
+            class="text"
+            href="mailto:baahfelix49@gmail.com"
+            target="_blank"
+          >
+            baahfelix49@gmail.com
+            <img
+              alt="underline"
+              src="/src/assets/svg/underline.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="img"
+          >
+            <div
+              class="imgContainer"
+            >
+              <img
+                alt="phone"
+                src="/src/assets/svg/phone.svg"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Phone
+            </div>
+          </div>
+          <a
+            class="text"
+            href=""
+          >
+            07931115686
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="socials"
+      >
+        <div
+          class="leftSection"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="container"
+            >
+              <a
+                class="img"
+                href="https://www.linkedin.com/in/felix-baah-938815258/"
+                target="_blank"
+              >
+                <div
+                  class="imgContainer"
+                >
+                  <img
+                    alt="footer linkedin"
+                    src="/src/assets/svg/linked_in.svg"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="container"
+            >
+              <a
+                class="img"
+                href="https://x.com/_felix_bh"
+                target="_blank"
+              >
+                <div
+                  class="imgContainer"
+                >
+                  <img
+                    alt="footer twitter"
+                    src="/src/assets/svg/twitter(x).svg"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="container"
+            >
+              <a
+                class="img"
+                href="https://github.com/Felix221123"
+                target="_blank"
+              >
+                <div
+                  class="imgContainer"
+                >
+                  <img
+                    alt="footer github"
+                    src="/src/assets/svg/github.svg"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <hr />
+          <div
+            class="copyrights"
+          >
+            Copyright © 2026 Felix Baah. All Rights Reserved.
+          </div>
+        </div>
+        <div
+          class="rightSection"
+        >
+          <div
+            class="logo"
+          >
+            <img
+              alt="portfolio icon"
+              src="/src/assets/images/portfolio-site-icon.webp"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Portfolio Website > Snapshots > should match the app snapshot 1`] = `
+<div>
+  <header
+    class="sc-bRKDuR bSbbFT"
+  >
+    <div
+      class="hero-content"
+    >
+      <div
+        class="hero-content-inner-left"
+      >
+        <div
+          class="logo"
+        >
+          <img
+            alt="Logo"
+            src="/src/assets/images/portfolio-site-icon.webp"
+          />
+        </div>
+        <div
+          class="title font-bold"
+        >
+          Felix Baah
+        </div>
+      </div>
+      <div
+        class="hero-content-inner-right cursor-pointer"
+      >
+        <div
+          class="menu-text font-medium"
+        >
+          Menu
+        </div>
+        <img
+          alt="Menu Icon"
+          src="/src/assets/svg/menu.svg"
+        />
+      </div>
+    </div>
+  </header>
+  <div
+    class="sc-fhHczv kAPMbD"
+    id="home"
+  >
+    <p
+      class="description"
+    >
+      Full Stack Software Developer, who loves turning ideas into scalable digital experiences and what's more I enjoy the whole process.
+    </p>
+    <h1
+      class="name"
+    >
+      Felix Baah.
+    </h1>
+  </div>
+  <div
+    class="sc-ggWZvA itPkCH"
+    id="about"
+  >
+    <div
+      class="imageContainer"
+    >
+      <img
+        alt="about me pic"
+        src="/src/assets/images/profile.jpeg"
+      />
+    </div>
+    <div
+      class="aboutMeText"
+    >
+      <h2>
+        Who I am?
+      </h2>
+      <div
+        class="description"
+      >
+        Hi I am Felix Baah, a Full-Stack Software Developer who enjoys building things in the digital world and staying ahead of how technology evolves.Outside of tech, I’m deeply into fitness including running, basketball, padel etc, and training keep me disciplined and sharp. I always put God first, and that mindset guides how I grow, work, and live.My interests go beyond software into finance and other industries, because I don’t believe in limiting myself to one lane.
+      </div>
+      <div
+        class="socialsIcon"
+      >
+        <div
+          class="socials"
+        >
+          <a
+            href="https://www.linkedin.com/in/felix-baah-938815258/"
+            target="_blank"
+          >
+            <img
+              alt="linkedin icon"
+              src="/src/assets/svg/Linkedin.svg"
+            />
+          </a>
+          <a
+            href="https://x.com/_felix_bh"
+            target="_blank"
+          >
+            <img
+              alt="twitter icon"
+              src="/src/assets/svg/Twitter.svg"
+            />
+          </a>
+          <a
+            href="https://github.com/Felix221123"
+            target="_blank"
+          >
+            <img
+              alt="github icon"
+              src="/src/assets/svg/Github%20Logo.svg"
+            />
+          </a>
+        </div>
+        <img
+          alt="arrow left"
+          src="/src/assets/svg/arrow_left.svg"
+        />
+        <div
+          class="text"
+        >
+          I am also here
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-dTvVRJ ewqYml"
+    id="experience"
+  >
+    <h3>
+      Work Experience
+    </h3>
+    <div
+      class="description"
+    >
+      Amazing Companies I’ve Worked With
+    </div>
+    <div
+      class="imageContainer"
+    >
+      <div
+        class="ImgContainer"
+      >
+        <img
+          alt="tribal world wide"
+          src="/src/assets/images/tribal_image.png"
+        />
+      </div>
+      <div
+        class="ImgContainer"
+      >
+        <img
+          alt="tribal world wide"
+          src="/src/assets/images/critical_mass.png"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-jwTyAe eQmVSn"
+    id="projects"
+  >
+    <div
+      class="projectHeaderDescription"
+    >
+      <h4>
+        Founded & Latest Projects
+      </h4>
+      <p>
+        A collection of projects I've worked on for clients and myself. Each one tells a story
+      </p>
+    </div>
+    <div
+      class="projectContainer"
+    >
+      <div
+        class="sc-hjsuWn dNerTK"
+      >
+        <div
+          class="videoContainer"
+        >
+          <video
+            autoplay=""
+            loop=""
+            src="https://www.youtube.com/watch?v=wlrVeeJhczY"
+          />
+        </div>
+        <div
+          class="textSection"
+        >
+          <a
+            class="link_projectType"
+            href="https://github.com/Felix221123/Sunny-Side-Landing-Page/blob/main/src/components/TextImageGrid.tsx"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              class="projectType"
+            >
+              Landing Page
+               
+            </div>
+            <img
+              alt="arrow on the right"
+              src="/src/assets/svg/arrow_right.svg"
+            />
+          </a>
+          <article
+            class="projectTitle"
+          >
+            Design Agency Web Design Landing Page
+          </article>
+          <p
+            class="projectDescription"
+          >
+            Hi! I’m a UI/UX Designer creating bold & brave interface design for companies all across the world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    class="sc-jJLAfE bWPUhQ"
+    id="contact"
+  >
+    <div
+      class="innerContainer"
+    >
+      <div
+        class="headingContainer"
+      >
+        <div
+          class="headerImageContainer"
+        >
+          <img
+            alt="header image"
+            src="/src/assets/svg/contact_img.svg"
+          />
+        </div>
+        <div
+          class="headerText"
+        >
+          <h5>
+            Want to work with me?
+          </h5>
+          <p
+            class="footerDescription"
+          >
+            Always happy to chat and hear your feedback, questions, or suggestions. Whether you want to discuss a project, collaborate on a design, or just say hi, feel free to reach out to me anytime.
+          </p>
+        </div>
+      </div>
+      <div
+        class="contactDetails"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="img"
+          >
+            <div
+              class="imgContainer"
+            >
+              <img
+                alt="email"
+                src="/src/assets/svg/email.svg"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Email
+            </div>
+          </div>
+          <a
+            class="text"
+            href="mailto:baahfelix49@gmail.com"
+            target="_blank"
+          >
+            baahfelix49@gmail.com
+            <img
+              alt="underline"
+              src="/src/assets/svg/underline.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="img"
+          >
+            <div
+              class="imgContainer"
+            >
+              <img
+                alt="phone"
+                src="/src/assets/svg/phone.svg"
+              />
+            </div>
+            <div
+              class="text"
+            >
+              Phone
+            </div>
+          </div>
+          <a
+            class="text"
+            href=""
+          >
+            07931115686
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="socials"
+      >
+        <div
+          class="leftSection"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="container"
+            >
+              <a
+                class="img"
+                href="https://www.linkedin.com/in/felix-baah-938815258/"
+                target="_blank"
+              >
+                <div
+                  class="imgContainer"
+                >
+                  <img
+                    alt="footer linkedin"
+                    src="/src/assets/svg/linked_in.svg"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="container"
+            >
+              <a
+                class="img"
+                href="https://x.com/_felix_bh"
+                target="_blank"
+              >
+                <div
+                  class="imgContainer"
+                >
+                  <img
+                    alt="footer twitter"
+                    src="/src/assets/svg/twitter(x).svg"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="container"
+            >
+              <a
+                class="img"
+                href="https://github.com/Felix221123"
+                target="_blank"
+              >
+                <div
+                  class="imgContainer"
+                >
+                  <img
+                    alt="footer github"
+                    src="/src/assets/svg/github.svg"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <hr />
+          <div
+            class="copyrights"
+          >
+            Copyright © 2026 Felix Baah. All Rights Reserved.
+          </div>
+        </div>
+        <div
+          class="rightSection"
+        >
+          <div
+            class="logo"
+          >
+            <img
+              alt="portfolio icon"
+              src="/src/assets/images/portfolio-site-icon.webp"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
