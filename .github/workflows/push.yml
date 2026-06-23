@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Checkout the Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.head_ref }}
 
@@ -60,7 +60,7 @@ jobs:
 
     steps:
       - name: Checkout the Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Use Node.js ${{ env.node-version }}
         uses: ./.github/actions/setup-node
@@ -84,7 +84,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # Step 1: Check out the source code from the repository.
+        uses: actions/checkout@v7 # Step 1: Check out the source code from the repository.
 
       - name: Use Node.js ${{ env.node-version }}
         uses: ./.github/actions/setup-node
