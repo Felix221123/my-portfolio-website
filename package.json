@@ -33,7 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/ui": "^2.0.4",
+    "@vitest/ui": "^4.1.10",
     "autoprefixer": "^10.4.20",
     "babel-plugin-styled-components": "^2.1.4",
     "baseline-browser-mapping": "^2.9.19",
